@@ -44,9 +44,11 @@ const SkillsModal = (props: any) => {
     bgcolor: '#f1faee',
   };
   useEffect(() => {
+    const url = process.env.NEXT_PUBLIC_BACKEND_URL;
+    console.log('haciendo peticion a ', url);
     const getSkills = async () => {
       try {
-        const { data, status } = await axios.get(`http://127.0.0.1:8000/employees/${props?.employeeId}`, {
+        const { data, status } = await axios.get(`${url}employees/${props?.employeeId}`, {
           headers: {
             Accept: 'application/json',
             'Access-Control-Allow-Origin': '*',

@@ -7,9 +7,11 @@ import EmployeeCard from '../../components/employeeCard/employeeCard';
 const Employees: NextPage = (props) => {
   const [Employees, setEmployees] = useState([]);
   useEffect(() => {
+    const url = process.env.NEXT_PUBLIC_BACKEND_URL;
+    console.log('haciendo peticion a ', url);
     const getEmployees = async () => {
       try {
-        const { data, status } = await axios.get('http://127.0.0.1:8000/employees', {
+        const { data, status } = await axios.get(`${url}employees`, {
           headers: {
             Accept: 'application/json',
             'Access-Control-Allow-Origin': '*',
@@ -36,7 +38,7 @@ const Employees: NextPage = (props) => {
           width: '100%',
         }}
       >
-        <Typography variant="h1" sx={{ color: '#457b9d', alignContent:"center"}}>
+        <Typography variant="h1" sx={{ color: '#457b9d', alignContent: 'center' }}>
           Employees
         </Typography>
         {Employees && (
