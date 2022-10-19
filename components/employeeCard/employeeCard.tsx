@@ -21,10 +21,13 @@ const EmployeeCard = (props: any) => {
               width: '90%',
               bgcolor: '#f1faee',
               borderRadius: '25px',
-              borderWidth: '5px',
+              borderWidth: '3px',
               borderColor: '#457b9d',
               borderStyle: 'solid',
               mt: 5,
+              ml:"auto",
+              mr:"auto",
+              boxShadow: "10px"
             }}
           >
             <CardContent>
@@ -56,7 +59,7 @@ const EmployeeCard = (props: any) => {
                 </Box>
               </Box>
             </CardContent>
-            <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+            <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center',mb:2 }}>
               <Button
                 variant="outlined"
                 size="large"

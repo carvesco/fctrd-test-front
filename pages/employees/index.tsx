@@ -36,14 +36,17 @@ const Employees: NextPage = (props) => {
           bgcolor: '#cfe8fc',
           height: '100vh',
           width: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
         }}
       >
-        <Typography variant="h1" sx={{ color: '#457b9d', alignContent: 'center' }}>
-          Employees
+        <Typography variant="h1" sx={{ color: '#457b9d',mt:6 }}>
+          Employee List
         </Typography>
         {Employees && (
           <Box sx={{ width: '50%', mt: 5, ml: 'auto', mr: 'auto' }}>
-            <Grid container justifyContent="center">
+            <Grid container justifyContent="center" alignItems="center">
               {Employees.map((item, i) => (
                 <>
                   <Grid xs={6}>
