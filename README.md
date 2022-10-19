@@ -13,7 +13,7 @@ git clone https://github.com/carvesco/fctrd-test-front.git
 npm install
 ```
 ## 4.Add env variables
-Create an .env.local file whit the same contents of .env.local.example, change the backend url according to your configuration.
+Create an .env.local file whit the same contents of .env.local.example, change the backend url according to your backend configuration.
 ![image](https://user-images.githubusercontent.com/20958791/196692765-e8dfb095-88cf-4c0d-9212-a020fe3abc7a.png)
 ## 3.Start the app
 ```bash
