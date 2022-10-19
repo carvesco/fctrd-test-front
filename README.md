@@ -23,4 +23,6 @@ yarn dev
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+Theres no validation  to login, but both fields need to have something.
+
 ![image](https://user-images.githubusercontent.com/20958791/196567473-f1d3a64b-1f06-4c15-a07f-615ec719c14a.png)
